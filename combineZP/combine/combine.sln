@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "combine", "combine.vcproj", "{FD805C9F-4530-4D0A-A7A2-014E9A82E166}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CombineZP", "..\CombineZP\CombineZP.vdproj", "{AAB7BE2F-CA27-4A62-8709-8F1233B3D921}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		W2000 = W2000
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FD805C9F-4530-4D0A-A7A2-014E9A82E166}.Debug.ActiveCfg = Debug|Win32
+		{FD805C9F-4530-4D0A-A7A2-014E9A82E166}.Debug.Build.0 = Debug|Win32
+		{FD805C9F-4530-4D0A-A7A2-014E9A82E166}.Release.ActiveCfg = Release|Win32
+		{FD805C9F-4530-4D0A-A7A2-014E9A82E166}.Release.Build.0 = Release|Win32
+		{FD805C9F-4530-4D0A-A7A2-014E9A82E166}.W2000.ActiveCfg = W2000|Win32
+		{FD805C9F-4530-4D0A-A7A2-014E9A82E166}.W2000.Build.0 = W2000|Win32
+		{AAB7BE2F-CA27-4A62-8709-8F1233B3D921}.Debug.ActiveCfg = Debug
+		{AAB7BE2F-CA27-4A62-8709-8F1233B3D921}.Debug.Build.0 = Debug
+		{AAB7BE2F-CA27-4A62-8709-8F1233B3D921}.Release.ActiveCfg = Release
+		{AAB7BE2F-CA27-4A62-8709-8F1233B3D921}.W2000.ActiveCfg = W2000
+		{AAB7BE2F-CA27-4A62-8709-8F1233B3D921}.W2000.Build.0 = W2000
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2516 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\combine.ico"
+IDR_COMBINTYPE          ICON                    "res\\combineDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENUEX 
+BEGIN
+    POPUP "&File ",                         65535,
+    MFT_STRING | MFT_MENUBARBREAK,MFS_ENABLED
+    BEGIN
+        MENUITEM "*&New",                       57600,MFT_STRING,MFS_ENABLED
+        MENUITEM "Empty Stack",                 33098,MFT_STRING,MFS_ENABLED
+        MENUITEM "*&Resume Work",               32863,MFT_STRING,MFS_ENABLED
+        MENUITEM "*Extract Frames",             33012,MFT_STRING,MFS_ENABLED
+        POPUP "Acquire Image(s)",               65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Select Source\tF9",           33104,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Toggle Video\tF5",            33034,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Camera Settings\tF6",         33092,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Get Image\tF7",               33032,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Get Movie Frames\tF8",        33103,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Capture Movie to File",       33116,
+            MFT_STRING | MFT_RIGHTJUSTIFY,MFS_GRAYED
+            MENUITEM "Save Camera Settings",        33100,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Load Camera Settings",        33101,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Save Defaults",               33102,MFT_STRING,
+            MFS_ENABLED
+        END
+        MENUITEM "*&Load Frames",               57601,MFT_STRING,MFS_ENABLED
+        MENUITEM "Import Frame",                32886,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Import Depthmap",             32891,MFT_STRING,MFS_ENABLED
+        MENUITEM "Export Depthmap",             32985,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Load Special",                33114,MFT_STRING,MFS_GRAYED
+        MENUITEM "Save Special",                33115,
+        MFT_STRING | MFT_RIGHTJUSTIFY,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Save Frame/Picture As",       57603,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save Rectangle As",          32849,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Export Rectangles",          32896,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Save Debug Information",      33052,MFT_STRING,MFS_ENABLED
+        MENUITEM "Set Options",                 33071,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit",                       57665,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Macro",                         65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Restore Standard Macros",    32992,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Load Macro Set",             32995,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Do Stack",                    32968,MFT_STRING,MFS_ENABLED
+        MENUITEM "Do Average and Filter",       32971,MFT_STRING,MFS_ENABLED
+        MENUITEM "Macro 1",                     32979,MFT_STRING,MFS_ENABLED
+        MENUITEM "Macro 2",                     32980,MFT_STRING,MFS_ENABLED
+        MENUITEM "Macro 3",                     32981,MFT_STRING,MFS_ENABLED
+        MENUITEM "Macro 4",                     32982,MFT_STRING,MFS_ENABLED
+        MENUITEM "Macro 5",                     32983,MFT_STRING,MFS_ENABLED
+        MENUITEM "Macro 8",                     32988,MFT_STRING,MFS_ENABLED
+        MENUITEM "Macro 9",                     32989,MFT_STRING,MFS_ENABLED
+        MENUITEM "Macro 10",                    32990,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Direct External Command 11",  33039,MFT_STRING,MFS_ENABLED
+        MENUITEM "Direct External Command 12",  33040,MFT_STRING,MFS_ENABLED
+        MENUITEM "System Command 13",           33041,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Pause (Untick to Disable)",  32993,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        POPUP "&Edit",                          65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "&Clear All Macros and Commands", 32994,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "&Macros",                     32978,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "&Commands",                   33015,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "&Parameters",                 33043,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "&Save Macro Set As",          32991,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Copy Macro Set to Clipboard", 33113,MFT_STRING,
+            MFS_ENABLED
+        END
+    END
+    POPUP "&View ",                         65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM " Select All (Cyclic)\tA",     32883,MFT_STRING,MFS_ENABLED
+        MENUITEM " Change View\tRt. Button",    32869,MFT_STRING,MFS_ENABLED
+        MENUITEM " Toggle Picture/Frame \tTAB", 32829,MFT_STRING,MFS_ENABLED
+        MENUITEM " Toggle Output\tO",           32960,MFT_STRING,MFS_ENABLED
+        MENUITEM " Toggle Frames A1/A2\t+",     32996,MFT_STRING,MFS_ENABLED
+        MENUITEM " Toggle Plane Mode \tP",      32828,MFT_STRING,MFS_ENABLED
+        MENUITEM " Toggle Fix/Paint\tF",        32832,MFT_STRING,MFS_ENABLED
+        MENUITEM " Toggle Depth Map\tD",        32855,MFT_STRING,MFS_ENABLED
+        MENUITEM " Show/Hide Grid\t#",          33110,MFT_STRING,MFS_ENABLED
+        MENUITEM " Toggle Video\tF5",           33034,MFT_STRING,MFS_ENABLED
+        MENUITEM " Information",                32847,MFT_STRING,MFS_ENABLED
+        MENUITEM " Progress\tF2",               32987,MFT_STRING,MFS_ENABLED
+        MENUITEM " Go to Frame\tF3",            32998,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM " Escape\tEsc",                32845,MFT_STRING,MFS_ENABLED
+        MENUITEM " Simple Mode",                33080,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Stack ",                        65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Re&verse Order",              32943,MFT_STRING,MFS_ENABLED
+        POPUP "&Choose Frames to Use",          65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Use All",                     32780,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Include Visible",             32827,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Do not Include Visible",      32826,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Don't Use Frames Above",      32779,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Don't Use Frames Below",      32778,MFT_STRING,
+            MFS_ENABLED
+        END
+        POPUP "&Size and Alignment",            65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Auto (&Shift+Scale)",         32838,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Auto (&Two pass Shift+Scale)", 32984,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Auto (Shift+&Rotate+Scale)",  33111,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Auto (&Dots Shift+Rotate)",   33050,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Resize All",                  32794,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Resize/Rotate/Move",          32831,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Tidy Edges",                  32955,MFT_STRING,
+            MFS_ENABLED
+        END
+        POPUP "Balance Colour and Brightness",  65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Global",                      32799,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Global Brightness",           33051,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Local",                       33005,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Local Colour Only",           33047,MFT_STRING,
+            MFS_ENABLED
+        END
+        MENUITEM "Replace Groups, Average",     32830,MFT_STRING,MFS_ENABLED
+        MENUITEM "Enhanced Average to Out",     33049,MFT_STRING,MFS_ENABLED
+        MENUITEM "Skew",                        32999,MFT_STRING,MFS_ENABLED
+        POPUP "Detail",                         65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "*Find &Detail",               32949,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "*Patchwork",                  33000,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "*Light and Dark",             33003,MFT_STRING,
+            MFS_ENABLED
+        END
+        MENUITEM "*Fill &Gaps",                 32951,MFT_STRING,MFS_ENABLED
+        MENUITEM "*Remove &Islands",            32969,MFT_STRING,MFS_ENABLED
+        MENUITEM "*&Remove Colour Steps",       32970,MFT_STRING,MFS_ENABLED
+        MENUITEM "Interpolated &Output",        32975,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "Fr&ame ",                        65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Begin Retouching",            33117,MFT_STRING,MFS_ENABLED
+        MENUITEM "&New from Visible (Unused*)", 32815,MFT_STRING,MFS_ENABLED
+        MENUITEM "New from Visible (&Used)",    33062,MFT_STRING,MFS_ENABLED
+        MENUITEM "Re&place With Visible",       32816,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Copy Visible to Out",        32997,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Remove Visible",             32783,MFT_STRING,MFS_ENABLED
+        MENUITEM "Make Active Frame &2 \t. (Dot)", 32876,MFT_STRING,
+        MFS_ENABLED
+        MENUITEM "Make Transparent",            32825,MFT_STRING,MFS_ENABLED
+        MENUITEM "Create Background",           32894,MFT_STRING,MFS_ENABLED
+        MENUITEM "Add Scale &Line",             33108,MFT_STRING,MFS_ENABLED
+        MENUITEM "New from Depthmap",           33064,MFT_STRING,MFS_ENABLED
+        MENUITEM "Reduce Noise",                33055,MFT_STRING,MFS_ENABLED
+        POPUP "Colour",                         65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Make Monochrome",             32887,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Split RGB",                   33053,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Split HSG",                   33059,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Extract Colour Range",        33058,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Invert Colours",              33054,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Stretch Colours",             33056,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Colour Product (2 Frame)",    33060,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Adjust Spectrum",             33057,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Rainbow",                     33063,MFT_STRING,
+            MFS_ENABLED
+        END
+        MENUITEM "Save and Edit\tF4",           33112,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Rectangle ",                    65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Fix",                        32774,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Unfix",                      32776,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Invert Fixed",               32880,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "*Clear Unfixed\tDelete",      32790,MFT_STRING,MFS_ENABLED
+        MENUITEM "*Clear All",                  32782,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "*Paste Active &Over",         57634,MFT_STRING,MFS_ENABLED
+        MENUITEM "*Paste Active &Under",        32789,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        POPUP "Colour and Brightness",          65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Red",                         32820,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Green",                       32821,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Blue",                        32822,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Brightness",                  32881,MFT_STRING,
+            MFS_ENABLED
+        END
+        MENUITEM "Contrast",                    32833,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        POPUP "2 Frame Functions",              65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Add",                         32888,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Blend",                       32885,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Correct Brightness",          32878,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Correct Brightness (Neutralize BG)", 33099,MFT_STRING,
+            MFS_ENABLED
+        END
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Reset Tool",                  32882,MFT_STRING,MFS_ENABLED
+        MENUITEM "End Tool\tReturn",            32874,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Points ",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "View Points...\t0",           32807,MFT_STRING,MFS_ENABLED
+        MENUITEM "Clear Points",                32808,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "P&yramid ",                      65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Clear Pyramid",               33066,MFT_STRING,MFS_ENABLED
+        POPUP "Maximum Contrast Rule",          65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Add Active to Pyramid",       33069,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Add All Used Frames",         33078,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Result to Out",               33068,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Recover Partial Depthmap",    33073,MFT_STRING,
+            MFS_ENABLED
+        END
+        POPUP "Weighted Average Rule",          65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Add Active to Pyramid",       33076,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Add All Used Frames",         33079,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Result to Out",               33077,MFT_STRING,
+            MFS_ENABLED
+        END
+    END
+    POPUP "Fi&lter ",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        POPUP "&Output",                        65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Normal",                      32909,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Brighten",                    32912,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Threshold",                   32911,MFT_STRING,
+            MFS_ENABLED
+        END
+        POPUP "I&nput",                         65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "&Active Frame",               32933,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "&Sum of Stack",               32944,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Weighted Sum",                33001,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Weighted Sum (Corrected)",    33046,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "&Depth Map",                  32954,MFT_STRING,
+            MFS_ENABLED
+        END
+        POPUP "&Create/Edit Filter",            65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "&Lowpass",                    32905,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "&Highpass",                   32906,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Bandpass",                    32907,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Bandstop",                    32910,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Butterworth",                 32908,MFT_STRING,
+            MFS_ENABLED
+        END
+        POPUP "I&mmediate",                     65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Filter Active Frame",         32915,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Filter All Frames",           32941,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "Display Last Output",         32953,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "*Last Output to Depth",       32976,MFT_STRING,
+            MFS_ENABLED
+        END
+        MENUITEM "Free Memory",                 32959,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "Movie",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Make",                        33009,MFT_STRING,MFS_GRAYED
+        MENUITEM "*Extract Frames",             33012,MFT_STRING,MFS_GRAYED
+        MENUITEM "Export Clipped Frames",       33035,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help ",                         65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "About CombineZP",             57664,MFT_STRING,MFS_ENABLED
+        MENUITEM "CombineZP Help",              33065,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Undo",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "*Set Undo &Point",            32974,MFT_STRING,MFS_ENABLED
+        MENUITEM "*U&ndo\tBACK",                32842,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Resume Work",                32863,MFT_STRING,MFS_ENABLED
+        MENUITEM "Re&load All Frames",          32797,MFT_STRING,MFS_ENABLED
+        MENUITEM "Reload Active\tBACK",         32796,MFT_STRING,MFS_ENABLED
+        MENUITEM "Reload Depth\tBACK",          32972,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Save Work",                  32962,MFT_STRING,MFS_ENABLED
+        MENUITEM "Sa&ve All Frames",            32791,MFT_STRING,MFS_ENABLED
+        MENUITEM "Save Active",                 32792,MFT_STRING,MFS_ENABLED
+        MENUITEM "Save Depth",                  32973,MFT_STRING,MFS_ENABLED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 7,0,0,1
+ PRODUCTVERSION 7,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "Comments", " Program by Alan Hadley"
+            VALUE "CompanyName", "Home"
+            VALUE "FileDescription", "CombineZP MFC Application"
+            VALUE "FileVersion", " 7.0"
+            VALUE "InternalName", "CombineZP"
+            VALUE "LegalCopyright", "Copyright (C) 2002 onwards"
+            VALUE "OriginalFilename", "CombineZP.exe"
+            VALUE "ProductName", "CombineZP"
+            VALUE "ProductVersion", "7.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "CombineZP\n\nCombin\n\n\nCombine.Document\nCombin Document"
+    IDS_MOVEFRAME1          "Shift is on.  You can only move a Frame!"
+    IDS_MOVEFRAME2          "Move Frame"
+    IDS_SIZEERROR1          "P1 and P2, or P3 and P4 Lie on different Frames"
+    IDS_ERROR               "Error"
+    IDS_SIZEERROR2          "P1 and P2, or P3 and P4 are the same Point"
+    IDS_SIZEERROR3          "Invalid combination of Points: P1 Origin; P1,P3 Origin & Offset; P1,P2,P3,P4 Origin, Offset, Angle & Scale."
+    IDS_NOPICTURE           "No Picture Taken"
+    IDS_LOADERROR           "Unsupported File Format"
+    IDS_LOADFRAME           "Load Frame"
+    IDS_LOADSIZE            "Frames must all be the same size"
+    IDS_FILELIMIT           "File Limit"
+    IDS_FILELIMITREACHED    "No room for any more Frames"
+    IDS_ACQUIRE1            "Make sure you have selected at least one Source.   see 'File Menu, Acquire Image(s)'"
+    IDS_ACQUIRE             "Acquire Image(s)"
+    IDS_BADPARAM            "CombineZP - Unrecognised Parameter"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CombineZP"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_OPEN            "Load 1 or more framesoad"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save displayed frame"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_SAVEALL             "Save All Frames"
+    IDS_RELOADALL           "Reload All Frames"
+    IDS_REVERSE             "Reverse Order of Frames"
+    IDS_BALANCE             "Balance Colour and Brightness (Global)"
+    IDS_AUTOALIGN1          "Align all Frames Automatically (Single pass)"
+    IDS_AUTOALIGN2          "Align all Frames Automatically (Two pass)"
+    IDS_RESIZEALL           "Resize all Frames (Regular steps)"
+    IDS_GROUP               "Replace Groups"
+    IDS_DETAIL              "Find Detail"
+    IDS_GAPS                "Fill Gaps"
+    IDS_ISLANDS             "Remove Islands"
+END
+
+STRINGTABLE 
+BEGIN
+    M_BG                    "Find Background pixels"
+    M_EDGE                  "Find Edges"
+    ID_FILE_REMOVE          "Remove frame"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STEPS               "Remove Colour Steps"
+    IDS_INTERPOLATE         "Interpolated Output"
+    IDS_NEWFROMPICTURE      "Make a new Frame from Picture"
+    IDS_NEWFROMOUT          "Make a new Frame from Out"
+    IDS_REPLACEFRAME        "Replace Frame with Out"
+    IDS_RGB                 "Adjust Colour and Brightness"
+    IDS_CONTRAST            "Adjust Contrast"
+    IDS_DFTACTIVE           "Filter Active Frame"
+    IDS_DFTSTACK            "Filter Sum of Stack"
+    IDS_DFTDEPTH            "Filter Depth Map"
+    IDS_LOWPASS             "Create a Lowpass Filter"
+    IDS_HIGHPASS            "Create a Highpass Filter"
+    IDS_FINISH              "Finish"
+    IDS_DFTALLFRAMES        "Filter All Frames"
+    IDS_BANDPASS            "Create a Bandpass Filter"
+    IDS_BUTTERWORTH         "Create a Butterworth Filter"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BANDSTOP            "Create a Bandstop Filter"
+    IDS_FANDRDEPTHMAP       "Filter and Replace Depthmap"
+    IDS_DFTOUTNORMAL        "Normal Filter Output"
+    IDS_DFTOUTBRIGHTEN      "Alter Brightness of Filter Output"
+    IDS_SAVEDEPTH           "Save Depthmap"
+    IDS_LOADDEPTH           "Reload Depthmap"
+    IDS_GOTOFRAME           "Go to Frame"
+    IDS_MACRO1              "Macro 1"
+    IDS_MACRO2              "Macro 2"
+    IDS_MACRO3              "Macro 3"
+    IDS_MACRO4              "Macro 4"
+    IDS_MACRO5              "Macro 5"
+    IDS_MACRO6              "Macro 6"
+    IDS_MACRO7              "Macro 7"
+    IDS_MACRO8              "Macro 8"
+    IDS_MACRO9              "Macro 9"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MACRO10             "Macro 10"
+    IDS_BANDW               "Convert Stack to Monochrome"
+    IDS_SKEW                "Skew Stack"
+    IDS_FIX                 "Fix"
+    IDS_UNFIX               "Unfix"
+    IDS_SELECTALL           "Select All"
+    IDS_PATCHWORK           "Make Patchwork"
+    IDS_DFTWEIGHTED         "Filter weighted sum of stack"
+    IDS_LIGHTDARK           "Find Lightest and Darkest Pixels"
+    IDS_LOCALBALANCE        "Balance Colour and Brightness (Local)"
+    IDS_REMOVE              "Remove Active Frame"
+    IDS_ACTIVE2             "Make Active Frame 2"
+    IDS_CORRECT_BRIGHTNESS  "Correct Brightness"
+    IDS_ADD_RECTANGLES      "Add Rectangles"
+    IDS_BLEND_RECTANGLES    "Blend Rectangles"
+    IDS_GOTO_FRAME_REL      "Go (Relative) to Frame"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GOTO_TOP_FRAME      "Go to Top Frame"
+    IDS_REMEMBER_FRAME1     "Remember Frame1"
+    IDS_REMEMBER_FRAME2     "Remember Frame2"
+    IDS_GOTO_FRAME1         "Go to Frame1"
+    IDS_GOTO_FRAME2         "Go to Frame2"
+    IDS_USE_FRAME           "Use Frame"
+    IDS_DONT_USE_FRAME      "Do Not Use Frame"
+    IDS_USE_ALL_FRAMES      "Use All Frames"
+    IDS_DONT_USE_ABOVE      "Do Not Use Frames Above"
+    IDS_DONT_USE_BELOW      "Do Not Use Frames Below"
+    IDS_INSERT_ABOVE        "Insert Above Active"
+    IDS_INSERT_BELOW        "Insert Below Active"
+    IDS_RESTART_MACRO       "Restart Macro"
+    IDS_COPY_TO_OUT         "Copy Active To Out"
+    IDS_PASTE_OVER          "Paste Active Over Picture"
+    IDS_PASTE_UNDER         "Paste Active Under Picture"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLEAR_ALL           "Clear Active Rectangle"
+    IDS_CLEAR_UNFIXED       "Clear Unfixed Active Rectangle"
+    IDS_MAKE_TRANSPARENT    "Make Black in Frame Transparent"
+    IDS_INVERT_FIXED        "Invert Fixed/Unfixed in Picture"
+    IDS_PICTURE_TO_FRAME    "Replace Frame with Picture"
+    IDS_EXCOM1              "External Command 1"
+    IDS_EXCOM2              "External Command 2"
+    IDS_EXCOM3              "External Command 3"
+    IDS_EXCOM4              "External Command 4"
+    IDS_EXCOM5              "External Command 5"
+    IDS_EXCOM6              "External Command 6"
+    IDS_EXCOM7              "External Command 7"
+    IDS_EXCOM8              "External Command 8"
+    IDS_EXCOM9              "External Command 9"
+    IDS_EXCOM10             "External Command 10"
+    IDS_TAKEPIC             "Take a Picture"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STARTSECOND         "Start ms Timer"
+    IDS_STARTMINUTE         "Start Minutes Timer"
+    IDS_STARTHOUR           "Start Hours Timer"
+    IDS_WAIT                "Wait for Timeout"
+    IDS_BANDWSW             "Process Monochrome Stack"
+    IDS_CHECK_DEPTH         "Correct for Brightness max/min in Z direction"
+    IDS_CLEAN_START         "Clean Start"
+    IDS_PAUSEMPI            "Pause for Macro Parameter Input"
+    IDS_WEIGHTEDWC          "Filter Corrected Weighted Sum of Stack"
+    IDS_DFTOUTTHRESHOLD     "Threshold Filter Output"
+    IDS_PADD                "Add Params"
+    IDS_PSUB                "Subtract Params"
+    IDS_PMULT               "Multiply Params"
+    IDS_PDIV                "Devide Params"
+    IDS_HDRAVERAGE          "Enhanced Average to Out"
+    IDS_BALCOLOUR           "Balance Colour Only"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXCOM11             "Direct External Command 12"
+    IDS_EXCOM12             "Direct External Command 11"
+    IDS_EXCOM13             "Direct External Command 13"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASTROALIGN          "Auto Align (Dots, Shift+Rotate)"
+    IDS_BALBRIGHT           "Balance Brightness"
+    IDS_ACTIVEOUT           "Output Active Frame"
+    IDS_SPLITRGB            "Split RGB to New Frames"
+    IDS_INVERT              "Inverted Colours to Out"
+    IDS_SPLITHSG            "Split HSG to New Frames"
+    IDS_COLOURPROD          "Colour Product of Active Frames"
+    IDS_STRETCHCOLOURS      "Stretch Colours"
+    IDS_EXTRACTRANGE        "Extract Colour Range"
+    IDS_ADJUSTSPECTRUM      "Adjust Spectrum"
+    IDS_REDUCENOISE         "Reduce Noise"
+    IDS_RAINBOW             "Rainbow"
+    IDS_NEWUSED             "New Used Frame from Out"
+    IDS_NEWDPTH             "New Frame from Depthmap"
+    IDS_TEST                "Compare Parameters"
+    IDS_COMPF               "Compare Active Frames"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ENDMACRO            "End Macro"
+    IDS_PCLEAR              "Clear Pyramid"
+    IDS_PADDMAX             "Add to Pyramid Max"
+    IDS_POUT                "Max Pyramid to Out"
+    IDS_PDEPTH              "Recover Depthmap from Pyramid"
+    IDS_PADDWEIGHT          "Add to Pyramid Weighted"
+    IDS_PWOUT               "Weighted Pyramid to Out"
+    IDS_PADDMAXUF           "Add All Used Frames to Max Pyramid"
+    IDS_PADDWAUF            "Add All Used Frames to WA Pyramid"
+    IDS_RESETNAME           "Reset new name string"
+    IDS_STARTVIDCAP         "Start of Video Capture"
+    IDS_ENDVIDCAP           "End of Video Capture"
+    IDS_ALIGNSRM            "Align Automatic Shift+Rotate+Scale "
+    IDS_SHROTSC             "ShiftRotateScale #offsetx/y,angle,size_factor,sizexorg/yorg"
+    IDS_LOADSPECIAL         "Load Special Frame"
+    IDS_SAVESPECIAL         "Save Special Frame"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPENFAILED          "Failed to Open any Picture Files in the folder at %s"
+    IDS_ERROREXEC           "Error Executing %s"
+    IDS_SAVEERROR           "Could not Save %s"
+    IDS_DEBUGPATH           "The Debug Information will be saved to %s"
+    IDS_DEBUGINFO           "Save Debug Information"
+    IDS_EXITMESSAGE         "Do you wish to save anything before Exiting CombineZ?"
+    IDS_RESUMEWORK          "Resume Work"
+    IDS_NOPAINT             "You can not Paint on or Fix the Output, (to enable painting visit the Brush dialog)"
+    IDS_MESSAGE             "Message"
+    IDS_ERROREXTCOM         "Could not run External Command"
+    IDS_MACROEDITOR         "Macro Editor"
+    IDS_MACROSAVED          " %s Saved"
+    IDS_NOPASTE             "Paste is meaningless in Plane mode"
+    IDS_DEPTHBIG            "'depth_big' Overflow"
+    IDS_INTERNERROR         "CombineZ Internal Error"
+    IDS_LIMITEDCAPS         "CombineZP has limited capabilities on this computer due to display problems"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WARNING             "WARNING"
+    IDS_3FRAMEERROR         "Not Enough room for 3 New Frames"
+    IDS_FRAMELIMIT          "Frame Limit"
+    IDS_ERRORFILEEXT        "Invalid file extention"
+    IDS_STRING164           "The Width or Hight does not match the loaded frames, Aborting!"
+    IDS_ERRORDMWH           "The Width or Hight does not match the loaded frames, Aborting!"
+    IDS_IMPORTDM            "Import Depth Map"
+    IDS_ERROR24BIT          "This is not a 24-bit RGB file, Aborting!"
+    IDS_ERRORFRAMESDM       "There are not enough Frames loaded"
+    IDS_REMOVEFR            "Remove Frame "
+    IDS_ERRORRELOAD         "Can't Reload %s\nDid You Save it?"
+    IDS_RELOAD              "Reload"
+    IDS_RELOADSAVE          "Do you wish to save anything before Reloading a Stack?"
+    IDS_RESUMEVERSION       "This file was created by an earlier version of CombineZ, its fortmat is not compatible with this version, srrry.   You must start processing this stack again."
+    IDS_LOADSAVE            "Do you wish to save anything before Loading a New Stack?"
+    IDS_NEWSTACK            "New Stack"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERRORUNSUP          "Can't Open this file, it may be an unsupported format.   Allowed formats are 8 bit per channel .bmp .jpg .jpeg .gif .tif .tiff and .png colour or monochrome images."
+    IDS_ERRORFRSIZE         "Frames must all be the same size"
+    IDS_CZOPEN              "CombineZ - Load Frame"
+    IDS_ERRORMACDEEP        "Macros Nested too deeply, the limit is 5"
+    IDS_MACRO               "Macro"
+    IDS_ERRORMACCALL        "A macro cannot call itself.   Macro terminated."
+    IDS_MACSAVED            "Macro %s Saved"
+    IDS_QUITMESSAGE         "Did you wish to Save anything before Leaving CombineZ?"
+    IDS_ERRORDFTPLAN        "Failed to create DFT Plan"
+    IDS_MEMORY              "Memory Management"
+    IDS_ERRORINSUFMEM       "Insufficient memory"
+    IDS_ERRORMALLOC         "ERROR Allocating Memory Code %d"
+    IDS_ERRORSLOTS          "Out of Slots"
+    IDS_ACTIVEONLY          "Active Frame Only?"
+    IDS_MAKEMONO            "Make Monochrome"
+    IDS_ERRORMOVIE          "There was a problem while making this Movie, Error code %d - %0x.   Try adjusting the amount of Reserved Memory (up or down) on the Options dialog (File Menu) then save and reload the stack."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MOVIE               "Movie"
+    IDS_ERRORMOVIER         "There was a problem reading this Movie"
+    IDS_ERROROUTSIDE        "You are outside the Selected rectangle"
+    IDS_TOOLCONTINUE        "Continue Using Tool?"
+    IDS_FRAMECHANGE         "Displayed Frame Changed"
+    IDS_SAVECHANGES         "Overwrite Frame with changes"
+    IDS_NEWFFROMPIC         "Create a new Frame from this Picture?"
+    IDS_NEWFRAME            "New Frame?"
+    IDS_MAKETRANS           "Make Transparent"
+    IDS_STRING201           "   Compare Frame %s with %s"
+    IDS_STRING202           "      xoffset=%d   yoffset=%d   scale=%0.4f"
+    IDS_STRING203           "   Actual Scale and Size"
+    IDS_STRING204           "*** No changes were made to any Frame ***"
+    IDS_STRING205           "   First Pass"
+    IDS_STRING206           "   Second Pass"
+    IDS_STRING207           "      X, Y and Scale already Found"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING208           "      Compare Frame %s with %s"
+    IDS_STRING209           "         xoffset=%d   yoffset=%d   scale=%0.4f"
+    IDS_STRING210           "     No need to scale"
+    IDS_STRING211           "      Shift and Scale Using Average factor=%0.4f"
+    IDS_STRING212           "      Final Shift and Scale"
+    IDS_STRING213           "*** No further changes were made to any Frame ***"
+    IDS_STRING214           "Resize Rotate Move"
+    IDS_STRING215           "Tidy Edges"
+    IDS_STRING216           "No Movie Device Created"
+    IDS_STRING217           "Movie Device"
+    IDS_STRING218           "No Still Device Created"
+    IDS_STRING219           "Still Device"
+    IDS_STRING220           "Selected Device=%ws"
+    IDS_STRING221           "Movie Device"
+    IDS_STRING222           "Still Device "
+    IDS_STRING223           "Stack will be saved to"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING224           "Can't Take Picture"
+    IDS_STRING225           "Still Picture Taken"
+    IDS_STRING226           "Video Frame Grabbed"
+    IDS_STRING227           "Pixel Format %x"
+    IDS_STRING228           "   Creating %s"
+    IDS_STRING229           "Clear Active Rectangle in Picture"
+    IDS_STRING230           "Clear Unfixed in Active Rectangle"
+    IDS_STRING231           "Foreground Sharpness 100=normal"
+    IDS_STRING232           "Overall Brightness 100=normal"
+    IDS_STRING233           "Background Brightness 100=normal"
+    IDS_STRING234           "Number of Levels (2 to %d)"
+    IDS_STRING235           "Maximum Noise Level"
+    IDS_STRING239           "Brighten (1000=stay same)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING240           "Lowlight Gain (0=none)"
+    IDS_STRING241           "Highlight Attenuation (0-1000, 0=none)"
+    IDS_STRING242           "10000 +(Right) -(Left) Pixels"
+    IDS_STRING243           "0+ Ignore Detail below this level"
+    IDS_STRING244           "1+ Detail Size"
+    IDS_STRING245           "Filters, see help file"
+    IDS_STRING246           "1+ Patch Width and Hight"
+    IDS_STRING247           "1+ Patch Threshold"
+    IDS_STRING248           "0+ Light Threshold Value"
+    IDS_STRING249           "0+ Dark Threshold Value"
+    IDS_STRING250           "1+ Remove islands below this size"
+    IDS_STRING251           "Jpeg Quality 0% to 100%"
+    IDS_STRING252           "External Command 1"
+    IDS_STRING253           "External Command 2"
+    IDS_STRING254           "External Command 3"
+    IDS_STRING255           "External Command 4"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING256           "External Command 5"
+    IDS_STRING257           "External Command 6"
+    IDS_STRING258           "External Command 7"
+    IDS_STRING259           "External Command 8"
+    IDS_STRING260           "External Command 9"
+    IDS_STRING261           "Save and Edit Active with IrfanView"
+    IDS_STRING262           "Direct External Command 2"
+    IDS_STRING263           "Direct External Command 1"
+    IDS_STRING264           "System Command"
+    IDS_STRING265           "Single External Command|*.ecd;|*.ecd||"
+    IDS_STRING266           "Replace Empty Pixels in Picture"
+    IDS_STRING267           "   With "
+    IDS_STRING268           "Replace Picture"
+    IDS_STRING269           "Replace out"
+    IDS_STRING270           "Copy Weighted Sum of Stack to Filter Input Buffer"
+    IDS_STRING271           "Copy Depthmap to Filter Input Buffer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING272           "Redisplay Last Filter Output"
+    IDS_STRING273           "Free Memory used by Filters"
+    IDS_STRING274           "0 to 1000 Centre Position"
+    IDS_STRING275           "0 to 1000 Cutoff Point"
+    IDS_STRING276           "Small integer Order"
+    IDS_STRING277           "0 to 1000 Displacement"
+    IDS_STRING278           "0 to 1000 Width"
+    IDS_STRING279           "*** Filter Status ***"
+    IDS_STRING280           "   Normal Output"
+    IDS_STRING281           "   Brighten Output"
+    IDS_STRING282           "   Threshold Output"
+    IDS_STRING283           "   LowPass(%d,%d)"
+    IDS_STRING284           "   HighPass(%d,%d)"
+    IDS_STRING285           "   BandPass(%d,%d)"
+    IDS_STRING286           "   BandStop(%d,%d,%d)"
+    IDS_STRING287           "   ButterWorth(%d,%d,%d)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING288           "Brighten Factor %d V="
+    IDS_STRING289           "Threshold Factor %d V="
+    IDS_STRING290           "LowpassFilter"
+    IDS_STRING291           "1 Decay Width"
+    IDS_STRING292           "2 Decay Start"
+    IDS_STRING293           "1 Decay Width"
+    IDS_STRING294           "2 Decay Start"
+    IDS_STRING295           "HighpassFilter"
+    IDS_STRING296           "BandpassFilter"
+    IDS_STRING297           "1 Decay Width"
+    IDS_STRING298           "2 Center Position"
+    IDS_STRING299           "BandstopFilter"
+    IDS_STRING300           "1 Decay Width"
+    IDS_STRING301           "2 Stopband Width"
+    IDS_STRING302           "3 Center Position"
+    IDS_STRING303           "Butterworth Filter"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING304           "1 Width"
+    IDS_STRING305           "2 Centre Position"
+    IDS_STRING306           "3 Shape (Order)"
+    IDS_STRING307           "Escape to Finish Session"
+    IDS_STRING308           " V=out"
+    IDS_STRING309           "Add"
+    IDS_STRING310           "Correct"
+    IDS_STRING311           "Blend"
+    IDS_STRING312           "Red"
+    IDS_STRING313           "Green"
+    IDS_STRING314           "Blue"
+    IDS_STRING315           "Contrast"
+    IDS_STRING316           "Brightness"
+    IDS_STRING317           "None"
+    IDS_STRING318           ",Fix V="
+    IDS_STRING319           "Full"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING320           "Mag."
+    IDS_STRING321           "Norm."
+    IDS_STRING322           "None"
+    IDS_STRING323           "Size"
+    IDS_STRING324           " M=Fix"
+    IDS_STRING325           " M=Paint"
+    IDS_STRING326           " M=Select"
+    IDS_STRING327           "Fixed"
+    IDS_STRING328           "Full"
+    IDS_STRING329           "Mag."
+    IDS_STRING330           "Normal"
+    IDS_STRING331           "Plane"
+    IDS_STRING332           "Depth"
+    IDS_STRING333           "_Hue"
+    IDS_STRING334           "_Saturation"
+    IDS_STRING335           "_Grey"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING336           "_Red"
+    IDS_STRING337           "_Green"
+    IDS_STRING338           "_Blue"
+    IDS_STRING339           "depth"
+    IDS_STRING340           "Save  "
+    IDS_STRING341           "  as  "
+    IDS_STRING342           "Default (*."
+    IDS_STRING343           "Save Rectangle "
+    IDS_STRING344           "  as  "
+    IDS_STRING345           "Save  "
+    IDS_STRING346           "  as  "
+    IDS_STRING347           "\\rectangles"
+    IDS_STRING348           "rect_"
+    IDS_STRING349           "Default (*."
+    IDS_STRING350           "%s_picture.%s"
+    IDS_STRING351           "_picture.%s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING352           "%s_out.%s"
+    IDS_STRING353           "_out.%s"
+    IDS_STRING354           "%s_picture.%s"
+    IDS_STRING355           "_picture.%s"
+    IDS_STRING356           "%s_out.%s"
+    IDS_STRING357           "_out.%s"
+    IDS_STRING358           "\\rectangles"
+    IDS_STRING359           "Export Rectangles to"
+    IDS_STRING360           "%s/rectangles/%05d-%s.%s"
+    IDS_STRING361           "%s/rectangles/picture.%s"
+    IDS_STRING362           "picture.%s"
+    IDS_STRING363           "%s/rectangles/out.%s"
+    IDS_STRING364           "out.%s"
+    IDS_STRING365           "Bitmap (*.bmp)|*.bmp||"
+    IDS_STRING366           "*** Failed ***"
+    IDS_STRING367           "*** Failed ***"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING368           "*** Failed ***"
+    IDS_STRING369           "   Import 'Red' data to Depthmap"
+    IDS_STRING370           "   Import 'Green' data to Depthmap"
+    IDS_STRING371           "depth"
+    IDS_STRING372           "Bitmap (*.bmp)|*.bmp||"
+    IDS_STRING373           "Export  "
+    IDS_STRING374           "  as  "
+    IDS_STRING375           "All formats|*.bmp;*.jpg;*.jpeg;*.gif;*.tif;*.tiff;*.png|*.bmp|*.bmp|*.jpg|*.jpg|*.jpeg|*.jpeg|*.gif|*.gif|*.tif|*.tif|*.tiff|*.tiff|*.png|*.png||"
+    IDS_STRING376           "Import Frame"
+    IDS_STRING377           "Remove Visible Frame"
+    IDS_STRING378           "*** Failed to Reload %s"
+    IDS_STRING379           "Reload Active Frame"
+    IDS_STRING380           "%s\\work\\depth.czp"
+    IDS_STRING381           "Reload Depthmap"
+    IDS_STRING382           "Save Depthmap"
+    IDS_STRING383           "%s\\work\\depth.czp"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING384           "%s\\work\\%s.czp"
+    IDS_STRING385           "Save Active Frame"
+    IDS_STRING386           "%s\\work\\%s.czp"
+    IDS_STRING387           "Save Working copy of All Frames"
+    IDS_STRING388           "%s\\work\\%s.czp"
+    IDS_STRING389           "\\work.czp"
+    IDS_STRING390           "Save Work"
+    IDS_STRING391           "   work.czd"
+    IDS_STRING392           "\\work.czd"
+    IDS_STRING393           "work.czd|work.czd"
+    IDS_STRING394           "Resume"
+    IDS_STRING395           "Resume Work"
+    IDS_STRING396           "   work"
+    IDS_STRING397           "*** Failed ***"
+    IDS_STRING398           "****************** From Previous Session(s) ***************"
+    IDS_STRING399           "*****************************************************************"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING400           "Load Frame(s)"
+    IDS_STRING401           "All formats|*.bmp;*.jpg;*.jpeg;*.gif;*.tif;*.tiff;*.png|*.bmp|*.bmp|*.jpg|*.jpg|*.jpeg|*.jpeg|*.gif|*.gif|*.tif|*.tif|*.tiff|*.tiff|*.png|*.png||"
+    IDS_STRING402           "Load Path"
+    IDS_STRING403           "\\work"
+    IDS_STRING404           "Pixel Format %x"
+    IDS_STRING405           "Original Size %dx%d pixels"
+    IDS_STRING406           "Expanded Size %dx%d pixels"
+    IDS_STRING407           "\\work.czb"
+    IDS_STRING408           "\\work"
+    IDS_STRING409           "pyramid%2d"
+    IDS_STRING410           "temp%2d"
+    IDS_STRING411           "Load Frame(s)"
+    IDS_STRING412           "Load Path"
+    IDS_STRING413           "\\work"
+    IDS_STRING414           "Pixel Format %x"
+    IDS_STRING415           "Original Size %dx%d pixels"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING416           "Expanded Size %dx%d pixels"
+    IDS_STRING417           "Save "
+    IDS_STRING418           "  as  "
+    IDS_STRING419           "\\movieFrames"
+    IDS_STRING420           "frame"
+    IDS_STRING421           "Default (*."
+    IDS_STRING422           "Export Movie Frames to"
+    IDS_STRING423           "%s\\output\\%s.%s"
+    IDS_STRING424           "Output Active Frame(%d)"
+    IDS_STRING425           ".../Output/"
+    IDS_STRING426           "\\output"
+    IDS_STRING427           "out"
+    IDS_STRING428           "picture"
+    IDS_STRING429           "depth"
+    IDS_STRING430           "Fix Pixels in Active Rectangle"
+    IDS_STRING431           "Invert Fixed Pixels in Active Rectangle"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING432           "Unfix Pixels in Active Rectangle"
+    IDS_STRING433           "Replace "
+    IDS_STRING434           "   With "
+    IDS_STRING435           "copy"
+    IDS_STRING436           "Generate a Background frame"
+    IDS_STRING437           "background"
+    IDS_STRING438           "* Escape Key Pressed *"
+    IDS_STRING439           "%s\tShift+F1"
+    IDS_STRING440           "%s\tShift+F2"
+    IDS_STRING441           "%s\tShift+F3"
+    IDS_STRING442           "%s\tShift+F4"
+    IDS_STRING443           "%s\tShift+F5"
+    IDS_STRING444           "%s\tShift+F6"
+    IDS_STRING445           "%s\tShift+F7"
+    IDS_STRING446           "%s\tShift+F8"
+    IDS_STRING447           "%s\tShift+F9"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING448           "%s\tShift+F10"
+    IDS_STRING449           "%s\tF12"
+    IDS_STRING450           "%s\tF11"
+    IDS_STRING451           "%s\tF6"
+    IDS_STRING452           "Do Stack"
+    IDS_STRING453           "Do Soft Stack"
+    IDS_STRING454           "Do Weighted Average"
+    IDS_STRING455           "Pyramid Weighted Average"
+    IDS_STRING456           "No Stack, Macro Aborted"
+    IDS_STRING457           "*** Nesting Limit Surpassed ********************"
+    IDS_STRING458           "***  Executing %s Macro  ***"
+    IDS_STRING459           "*** Value Passed(%d) ***"
+    IDS_STRING460           "*** Paused ***"
+    IDS_STRING461           "*** Step Canceled ***"
+    IDS_STRING462           "*** Macro Execution Canceled ***"
+    IDS_STRING463           "  result=%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING464           "*** ERROR *** Add Params Invalid Destination"
+    IDS_STRING465           "*** ERROR *** Subtract Params Invalid Destination"
+    IDS_STRING466           "*** ERROR *** Multiply Params Invalid Destination"
+    IDS_STRING467           "*** ERROR *** Devide Params Invalid Destination"
+    IDS_STRING468           "999999 Devide by Zero ERROR"
+    IDS_STRING469           "Go to Relative Frame(%d)"
+    IDS_STRING470           "Go to Top Frame(%d)"
+    IDS_STRING471           "Saved Frame number(%d) as Frame1"
+    IDS_STRING472           "Saved Frame number(%d) as Frame1"
+    IDS_STRING473           "Go to Frame(%d)=Frame1"
+    IDS_STRING474           "Go to Frame(%d)=Frame2"
+    IDS_STRING475           "Use Frame(%d)"
+    IDS_STRING476           "Do Not Use Frame(%d)"
+    IDS_STRING477           "Use All Frames"
+    IDS_STRING478           "Do Not Use Frames Above(%d)"
+    IDS_STRING479           "Do Not Use Frames Below(%d)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING480           "*** No more Frames can be added ***"
+    IDS_STRING481           "Frame(%d) Inserted"
+    IDS_STRING482           "Restarting Macro"
+    IDS_STRING483           "Make Active Frame2(%d)"
+    IDS_STRING484           "Finish all Filtering etc."
+    IDS_STRING485           "A macro cannot call itself.   Macro terminated."
+    IDS_STRING486           "*** Start of Nested Macro ***"
+    IDS_STRING487           "*** Macro Terminated ***"
+    IDS_STRING488           "*** End of Nested Macro ***"
+    IDS_STRING489           "***  Finished Executing %s Macro  ***"
+    IDS_STRING490           "* Please wait while Picture is redrawn"
+    IDS_STRING491           "Macro Set|*.czm;|*.czm||"
+    IDS_STRING492           "defaultmac.czm"
+    IDS_STRING493           "Macro Set|*.czm;|*.czm||"
+    IDS_STRING494           "defaultmac.czm"
+    IDS_STRING495           "&Pause (Untick to Disable)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING496           "&Pause (Tick to Enable)"
+    IDS_STRING497           "New-Out"
+    IDS_STRING498           "Create New Frame"
+    IDS_STRING499           "workingmac.czx"
+    IDS_STRING500           "_Macro 1"
+    IDS_STRING501           "_Macro 2"
+    IDS_STRING502           "_Macro 3"
+    IDS_STRING503           "_Macro 4"
+    IDS_STRING504           "_Macro 5"
+    IDS_STRING505           "_Macro 6"
+    IDS_STRING506           "_Macro 7"
+    IDS_STRING507           "_Macro 8"
+    IDS_STRING508           "_Macro 9"
+    IDS_STRING509           "_Macro 10"
+    IDS_STRING510           "* NONE *"
+    IDS_STRING511           "_MacParam%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING512           "* Passed Value *"
+    IDS_STRING513           "#height"
+    IDS_STRING514           "#width"
+    IDS_STRING515           "#used frames"
+    IDS_STRING516           "#frames"
+    IDS_STRING517           "#max slots"
+    IDS_STRING518           "#active frame 1"
+    IDS_STRING519           "#active frame 2"
+    IDS_STRING520           "#last used frame"
+    IDS_STRING521           "#bottom used frame"
+    IDS_STRING522           "plane mode"
+    IDS_STRING523           "#fix active"
+    IDS_STRING524           "#depth mode"
+    IDS_STRING525           "#show fixed"
+    IDS_STRING526           "mag.bottom"
+    IDS_STRING527           "mag.left"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING528           "mag.right"
+    IDS_STRING529           "mag.top"
+    IDS_STRING530           "#P length34"
+    IDS_STRING531           "#P length12"
+    IDS_STRING532           "#P angle"
+    IDS_STRING533           "#P ratio"
+    IDS_STRING534           "P1.frame"
+    IDS_STRING535           "P1.valid"
+    IDS_STRING536           "P1.x"
+    IDS_STRING537           "P1.y"
+    IDS_STRING538           "P2.frame"
+    IDS_STRING539           "P2.valid"
+    IDS_STRING540           "P2.x"
+    IDS_STRING541           "P2.y"
+    IDS_STRING542           "P3.frame"
+    IDS_STRING543           "P3.valid"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING544           "P3.x"
+    IDS_STRING545           "P3.y"
+    IDS_STRING546           "P4.frame"
+    IDS_STRING547           "P4.valid"
+    IDS_STRING548           "P4.x"
+    IDS_STRING549           "P4.y"
+    IDS_STRING550           "angle"
+    IDS_STRING551           "normal x origin"
+    IDS_STRING552           "normal y origin"
+    IDS_STRING553           "scale"
+    IDS_STRING554           "#small w"
+    IDS_STRING555           "#small h"
+    IDS_STRING556           "size origin x"
+    IDS_STRING557           "size origin y"
+    IDS_STRING558           "offset x"
+    IDS_STRING559           "offset y"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING560           "#frame border"
+    IDS_STRING561           "goodrect.bottom"
+    IDS_STRING562           "goodrect.top"
+    IDS_STRING563           "goodrect.left"
+    IDS_STRING564           "goodrect.right"
+    IDS_STRING565           "brush size"
+    IDS_STRING566           "brush delta"
+    IDS_STRING567           "active frame Unused"
+    IDS_STRING568           "#Tlt"
+    IDS_STRING569           "#Tle"
+    IDS_STRING570           "#Teq"
+    IDS_STRING571           "#Tge"
+    IDS_STRING572           "#Tgt"
+    IDS_STRING573           "#Tne"
+    IDS_STRING574           "size factor"
+    IDS_STRING575           "#active frames difference"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING576           "#maxangle"
+    IDS_STRING577           "Monochrome Processing"
+    IDS_STRING578           "#contrast delta"
+    IDS_STRING579           "#red factor"
+    IDS_STRING580           "#green factor"
+    IDS_STRING581           "#blue factor"
+    IDS_STRING582           "#correction factor"
+    IDS_STRING583           "#add factor"
+    IDS_STRING584           "#blend factor"
+    IDS_STRING585           "#noise level"
+    IDS_STRING586           "#min island size"
+    IDS_STRING587           "#skew amount"
+    IDS_STRING588           "#patch size"
+    IDS_STRING589           "jpeg compression"
+    IDS_STRING590           "#ld light threshold"
+    IDS_STRING591           "#ld dark threshold"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING592           "#patch threshold"
+    IDS_STRING593           "#hdr Brightness"
+    IDS_STRING594           "#hdr High Attenuation"
+    IDS_STRING595           "#hdr Low Gain"
+    IDS_STRING596           "#Extract Colours redend"
+    IDS_STRING597           "#Extract Colours bluend"
+    IDS_STRING598           "#Extract Colours threshold"
+    IDS_STRING599           "#Spectrum redend"
+    IDS_STRING600           "#Spectrum bluend"
+    IDS_STRING601           "#Spectrum break"
+    IDS_STRING602           "#Noise detection"
+    IDS_STRING603           "#Noise substitute"
+    IDS_STRING604           "#Noise limit"
+    IDS_STRING605           "#Detail Size"
+    IDS_STRING606           "#Detail Filter"
+    IDS_STRING607           "#Pyramid Number"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING608           "#Pyramid Levels"
+    IDS_STRING609           "#Pyramid Input Count"
+    IDS_STRING610           "Single Macro|*.mac;|*.mac||"
+    IDS_STRING611           "Filter Initializeation (Please be patient)"
+    IDS_STRING612           "work\\"
+    IDS_STRING613           "work\\"
+    IDS_STRING614           "Make Frame(s) Monochrome"
+    IDS_STRING615           "Making Movie"
+    IDS_STRING616           "Extracting Frames from Movie"
+    IDS_STRING617           "\\work"
+    IDS_STRING618           " Loaded"
+    IDS_STRING619           "Operation Cancelled"
+    IDS_STRING620           "   Pyramid Levels=%d"
+    IDS_STRING621           "Potential overflow above 0x4fffffffff"
+    IDS_STRING622           "Save the changes you made to "
+    IDS_STRING623           "Make Unfixed Black in Frame(s) Transparent"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING624           "*Set Undo Point for Quick Undo"
+    IDS_STRING625           "Point 1 (%d,%d) Frame %s"
+    IDS_STRING626           "Point 2 (%d,%d) Frame %s"
+    IDS_STRING627           "Point 1 Not Initialized"
+    IDS_STRING628           "Point 3 Not Initialized"
+    IDS_STRING629           "Length unknown"
+    IDS_STRING630           "Point 3 (%d,%d) Frame %s"
+    IDS_STRING631           "Point 4 (%d,%d) Frame %s"
+    IDS_STRING632           "Point 4 Not Initialized"
+    IDS_STRING633           "Length of p3p4=%d"
+    IDS_STRING634           "Length unknown"
+    IDS_STRING635           "Angle=%g degrees"
+    IDS_STRING636           "Suggested 'Resize All' factor %d"
+    IDS_STRING637           "Suggested 'Resize All' factor %d"
+    IDS_STRING638           "No Ratio available"
+    IDS_STRING639           "No Angle available"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING640           "No suggested 'Resize All' factor"
+    IDS_STRING641           "Point 2 Not Initialized"
+    IDS_STRING642           "Add All Used Frames to Pyramid (Max)"
+    IDS_STRING643           "Add All Used Frames to Pyramid (Weighted)"
+    IDS_STRING644           "Align and Balance Used Frames (Thorough)"
+    IDS_STRING645           "Pyramid Do Stack"
+    IDS_STRING646           "Pyramoid Maximum Contrast"
+    IDS_STRING647           "The amount of RAM reserved on the options dialog is too large, zero is used instead"
+    IDS_STRING648           "Warning"
+    IDS_STRING649           "grab"
+    IDS_STRING650           "Preview %dx%d pixels"
+    IDS_STRING651           "Still %dx%d pixels"
+    IDS_STRING652           "Size Mismatch"
+    IDS_STRING653           "Grab Frame"
+    IDS_STRING654           "Grabbed - %s"
+    IDS_STRING655           "Camera Settings|*.czc;|*.czc||"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING656           "defaultset"
+    IDS_STRING657           "     Test Angles=(%d,%d,%d) scores=(%d,%d,%d)"
+    IDS_SCALELINE           "Scale Line Created"
+    IDS_STRING659           "  as Frame %s"
+    IDS_STRING660           "10000 +(Down) -(Up) Pixels"
+    IDS_STRING661           "Align and Balance Used Frames (Quick)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAPTOFILE           "Capture Movie to File"
+    IDS_SELECTNEXTRECT      "Select Next Rectangle"
+    IDS_MAKEMOVIE           "Make Movie"
+    IDS_SAVECLIPPEDFRAMES   "Save Clipped Frames"
+    IDS_EMPTYSTACK          "Empty Stack"
+    IDS_FILTER              "Refilter old Input"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PROGRESS            ICON                    "res\\progress.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 216, 193
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "About CombineZP"
+FONT 13, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CombineZP",IDC_STATIC,33,11,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,159,7,50,14,WS_GROUP
+    LTEXT           "by Alan Hadley",IDC_STATIC,33,22,48,8
+    LTEXT           "alan@micropics.org.uk",IDC_STATIC,33,33,72,8
+    LTEXT           "If you try the program and have any bug reports, comments or suggestions do not hesitate to pass them on to me at the above address.",
+                    IDC_STATIC,33,150,141,36
+    LTEXT           "16th of October, 2009",IDC_STATIC,33,46,164,11
+    LTEXT           "This program is released under a GNU Public Licence.   The source code and a copy of the licence are available from my website http://www.hadleyweb.pwp.blueyonder.co.uk You may use and modify the code as you wish under the terms of this licence.",
+                    IDC_STATIC,33,93,141,49
+    LTEXT           "Users of this Public Domain software do so at there own risk, there is no guarantee of it's fitness for any purpose.",
+                    IDC_STATIC,33,62,141,24
+END
+
+IDD_POINTS DIALOGEX 0, 0, 187, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 14, "Times New Roman", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Exit",IDOK,7,173,20,14
+    PUSHBUTTON      "Set Parameters",IDC_SETPARAMS,37,173,53,14
+    DEFPUSHBUTTON   "Set and Use Params",IDC_SIZEREG,98,173,78,14
+    EDITTEXT        IDC_F1P1,17,15,153,14,ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_LENGTH12,78,30,86,14,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_F1P2,17,45,152,14,ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_F1P3,17,68,151,14,ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_LENGTH34,78,84,86,14,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_F1P4,17,101,152,14,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_RATIO,11,123,165,14,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ANG,11,139,165,14,ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_RESIZEALL,12,156,165,14,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+END
+
+IDD_GROUPSIZE DIALOGEX 0, 0, 186, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Combine Frames"
+FONT 14, "Times New Roman", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_DECIMATEN,22,42,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "Number of Frames to Combine",IDC_STATIC,22,30,95,8
+END
+
+IDD_RESIZEALL DIALOG  0, 0, 196, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resize All"
+FONT 14, "Times New Roman"
+BEGIN
+    EDITTEXT        IDC_SIZEALLFACTOR,50,32,47,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,139,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,24,50,14
+    LTEXT           "Size Factor (10000=1.0000 Times) ",IDC_STATIC,16,19,111,
+                    8
+    EDITTEXT        IDC_EDIT1,50,68,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT2,50,86,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Origin",IDC_STATIC,15,57,19,8
+    LTEXT           "X",IDC_STATIC,20,72,8,8
+    LTEXT           "Y",IDC_STATIC,21,90,8,8
+END
+
+IDD_SIZROTMOV DIALOG  0, 0, 234, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reposition Frame"
+FONT 14, "Times New Roman"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,169,16,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,169,38,50,14
+    LTEXT           "Size Factor",IDC_STATIC,19,19,36,8
+    LTEXT           "Origin",IDC_STATIC,19,60,19,8
+    LTEXT           "Offset",IDC_STATIC,19,82,20,8
+    LTEXT           "Angle",IDC_STATIC,19,114,19,8
+    LTEXT           "X",IDC_STATIC,77,45,8,8
+    LTEXT           "Y",IDC_STATIC,133,44,8,8
+    EDITTEXT        IDC_SF,62,18,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SX,60,58,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SY,117,58,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_SOX,60,82,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT
+    EDITTEXT        IDC_SOY,117,82,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SA,60,111,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Times 10000",IDC_STATIC,109,19,42,8
+    LTEXT           "Degrees Times 100",IDC_STATIC,112,113,62,8
+    PUSHBUTTON      "Reset",IDC_RESET,169,60,50,14
+END
+
+IDD_BRUSH DIALOGEX 0, 0, 146, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Brush Properties"
+FONT 14, "Times New Roman", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,88,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,88,50,14
+    LTEXT           "Brush Delta (0 to 255)",IDC_STATIC,14,8,81,14,
+                    SS_CENTERIMAGE
+    LTEXT           "Brush Size (0 to 25)",IDC_STATIC,14,28,64,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,99,8,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT2,99,28,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Paint On",IDC_STATIC,7,44,132,19
+    CONTROL         "Picture",IDC_PAINTONPICT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT,74,52,37,10,WS_EX_RIGHT
+    CONTROL         "Output Image ",IDC_PAINTONOUT,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT,13,52,52,10,WS_EX_RIGHT
+    LTEXT           "Feather Width/Amount",IDC_STATIC,14,72,69,8
+    EDITTEXT        IDC_FEATHERR,99,69,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_DISABLED
+END
+
+IDD_INFO DIALOG  0, 0, 158, 115
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 14, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,32,94,50,14
+    LTEXT           "There are ",IDC_STATIC,22,9,34,8
+    EDITTEXT        IDC_EDIT1,57,7,40,12,ES_RIGHT | ES_READONLY | ES_NUMBER | 
+                    NOT WS_TABSTOP
+    LTEXT           "Frames",IDC_STATIC,105,10,24,8
+    LTEXT           "Of height",IDC_STATIC,21,26,34,8
+    EDITTEXT        IDC_EDIT4,56,24,40,12,ES_RIGHT | ES_READONLY | ES_NUMBER
+    LTEXT           "Pixels",IDC_STATIC,105,27,19,8
+    LTEXT           "And width",IDC_STATIC,21,43,35,8
+    EDITTEXT        IDC_EDIT2,57,41,40,12,ES_RIGHT | ES_READONLY | ES_NUMBER
+    LTEXT           "Pixels",IDC_STATIC,105,44,19,8
+    LTEXT           "There are",IDC_STATIC,21,60,31,8
+    EDITTEXT        IDC_EDIT5,58,58,40,12,ES_RIGHT | ES_READONLY | ES_NUMBER
+    LTEXT           "Memory Slots",IDC_STATIC,105,61,42,8
+    LTEXT           "Of size",IDC_STATIC,21,77,22,8
+    EDITTEXT        IDC_EDIT6,58,75,40,12,ES_RIGHT | ES_READONLY | ES_NUMBER
+    LTEXT           "Bytes",IDC_STATIC,105,78,17,8
+END
+
+IDD_ROTATERECT DIALOG  0, 0, 237, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Rectangle"
+FONT 14, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "0",IDC_RR0,93,82,50,14
+    PUSHBUTTON      "90 ",IDC_RR90,21,51,50,14
+    PUSHBUTTON      "180",IDC_RR180,93,51,50,14
+    PUSHBUTTON      "270",IDC_RR270,165,51,50,14
+    LTEXT           "Rotate Clockwise (degrees)",IDC_STATIC,73,25,89,8
+END
+
+IDD_GETVALUE DIALOGEX 0, 0, 290, 43
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 14, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_VALUE,151,15,35,12,ES_RIGHT | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,202,7,32,27
+    PUSHBUTTON      "Cancel",IDCANCEL,250,7,32,27
+    LTEXT           "Value +/-",IDC_STRING,7,7,133,19
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 225, 280
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION
+EXSTYLE WS_EX_OVERLAPPEDWINDOW
+CAPTION "CombineZP Progress ..."
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER | 
+                    0x1,26,208,172,19
+    LISTBOX         IDC_TEXT,7,7,211,154,NOT LBS_NOTIFY | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    DEFPUSHBUTTON   "Minimize",IDC_MINIMIZE,7,252,67,21
+    PUSHBUTTON      "Cancel",IDC_CANCEL,151,252,67,21
+    PUSHBUTTON      "Copy Selected Lines to Clipboard",IDC_COPY,85,178,112,
+                    20
+    PUSHBUTTON      "Select All",IDC_SELECTALL,27,178,50,20
+END
+
+IDD_MACRO DIALOGEX 0, 0, 268, 311
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Macro Editor"
+FONT 12, "Arial", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST,7,27,195,197,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Edit/Copy",IDC_EDIT,211,76,50,14
+    PUSHBUTTON      "Update/Paste",IDC_UPDATE,211,146,50,14
+    COMBOBOX        IDC_COMMAND,43,230,157,84,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_P1,56,272,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P2,130,272,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P3,206,272,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,59,7,143,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK / Update",IDOK,78,290,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,290,50,14
+    LTEXT           "Macro Name",IDC_STATIC,9,8,41,8
+    LTEXT           "Command",IDC_STATIC,9,230,33,8
+    LTEXT           "Value",IDC_STATIC,9,274,35,8
+    PUSHBUTTON      "Insert Above",IDC_INSERT,211,111,50,14
+    LTEXT           "Macro",IDC_STATIC,9,19,21,8
+    PUSHBUTTON      "Delete",IDC_DELETE,211,181,50,14
+    PUSHBUTTON      "Load Macro",IDC_LOAD,211,6,50,14
+    PUSHBUTTON      "Save Macro",IDC_SAVE,209,41,50,14
+    CONTROL         "Pause",IDC_PAUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    207,226,36,10
+    CONTROL         "Add to Name",IDC_TONAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,207,237,52,10
+    LTEXT           "Substitute",IDC_STATIC,9,253,32,8
+    COMBOBOX        IDC_SUB1,43,252,71,61,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SUB2,116,252,71,61,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SUB3,189,252,71,59,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_IMPORTDM DIALOGEX 0, 0, 189, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Depthmap"
+FONT 12, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,131,99,50,14
+    PUSHBUTTON      "Red",IDC_REDDATA,7,99,50,14
+    DEFPUSHBUTTON   "Green",IDC_GREENDATA,69,99,50,14
+    LTEXT           "Press Red if the Depthmap is on the Red channel, and consists of an absolute frame number",
+                    IDC_STATIC,33,7,123,31
+    LTEXT           "Press Green if the Depthmap is on the Green channel, and uses 0 to indicate Empty Pixels and the Frame numbers are distributed between 1 and 255",
+                    IDC_STATIC,33,38,123,35
+    LTEXT           "In both cases Blue is clear for Empty Pixels",
+                    IDC_STATIC,32,76,123,18
+END
+
+IDD_CHOOSEMACRO DIALOGEX 0, 0, 180, 209
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Macro"
+FONT 14, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Macro 1",IDC_MACRO1,7,7,166,12
+    PUSHBUTTON      "Macro 2",IDC_MACRO2,7,27,166,12
+    PUSHBUTTON      "Macro 3",IDC_MACRO3,7,47,166,12
+    PUSHBUTTON      "Macro 4",IDC_MACRO4,7,67,166,12
+    PUSHBUTTON      "Macro 5",IDC_MACRO5,7,87,166,12
+    PUSHBUTTON      "Macro 6",IDC_MACRO6,7,107,166,12
+    PUSHBUTTON      "Macro 7",IDC_MACRO7,7,127,166,12
+    PUSHBUTTON      "Macro 8",IDC_MACRO8,7,147,166,12
+    PUSHBUTTON      "Macro 9",IDC_MACRO9,7,167,166,12
+    PUSHBUTTON      "Macro 10",IDC_MACRO10,7,187,166,12
+END
+
+IDD_PARAMS DIALOGEX 0, 0, 162, 79
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Parameters for:-"
+FONT 14, "Arial", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Continue",IDOK,111,58,43,14
+    EDITTEXT        IDC_CP1,7,33,43,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CP3,111,33,43,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_CP2,59,33,43,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Command Name",IDC_COMMAND,7,7,148,23
+    PUSHBUTTON      "Cancel Step",IDC_CANCEL,7,58,43,14
+    PUSHBUTTON      "End Macro",IDC_END,59,58,43,14
+END
+
+IDD_GOTOFRAME DIALOGEX 0, 0, 269, 306
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Goto Frame"
+FONT 12, "Arial", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_USED,7,27,255,117,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,143,285,50,14,NOT WS_TABSTOP
+    LTEXT           "Used Frames",IDC_STATIC,8,15,42,8
+    LTEXT           "*Unused Frames and other Buffers",IDC_STATIC,8,151,87,8
+    LISTBOX         IDC_UNUSED,7,164,255,117,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",ID_OK,75,285,50,14
+END
+
+IDD_MOVIE DIALOGEX 0, 0, 208, 86
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Movie Settings"
+FONT 14, "Times New Roman", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,151,24,50,14
+    LTEXT           "Maximum Width",IDC_STATIC,8,8,51,8
+    LTEXT           "Maximum Height",IDC_STATIC,8,29,53,8
+    LTEXT           "miliseconds per Frame",IDC_STATIC,8,50,71,8
+    LTEXT           "Quality (0 to 100)",IDC_STATIC,8,71,58,8
+    EDITTEXT        IDC_WIDTH,92,7,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_HEIGHT,92,25,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TIME,92,45,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_QUALITY,92,65,40,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_TAKE_PICTURE DIALOGEX 0, 0, 130, 29
+STYLE DS_ABSALIGN | DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Take Picture"
+FONT 14, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Take Picture",IDC_TAKE_PICTURE,7,7,50,14
+    PUSHBUTTON      "Finish",IDC_END_VIDEO,73,7,50,14
+END
+
+IDD_CHOOSEEXTCOMMAND DIALOGEX 0, 0, 180, 217
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit External Command"
+FONT 14, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "External Command 1",IDC_ECOM1,7,7,166,10
+    PUSHBUTTON      "External Command 2",IDC_ECOM2,7,23,166,10
+    PUSHBUTTON      "External Command 3",IDC_ECOM3,7,39,166,10
+    PUSHBUTTON      "External Command 4",IDC_ECOM4,7,55,166,10
+    PUSHBUTTON      "External Command 5",IDC_ECOM5,7,71,166,10
+    PUSHBUTTON      "External Command 6",IDC_ECOM6,7,87,166,10
+    PUSHBUTTON      "External Command 7",IDC_ECOM7,7,103,166,10
+    PUSHBUTTON      "External Command 8",IDC_ECOM8,7,119,166,10
+    PUSHBUTTON      "External Command 9",IDC_ECOM9,7,135,166,10
+    PUSHBUTTON      "External Command 10",IDC_ECOM10,7,151,166,10
+    PUSHBUTTON      "External Command 12",IDC_ECOM11,7,184,166,10
+    PUSHBUTTON      "External Command 11",IDC_ECOM12,7,168,166,10
+    PUSHBUTTON      "External Command 13",IDC_ECOM13,7,200,166,10
+END
+
+IDD_EXTCOMMAND DIALOGEX 0, 0, 324, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 14, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,106,72,50,14
+    LTEXT           "Name",IDC_STATIC,7,7,19,8
+    EDITTEXT        IDC_NAME,64,7,253,13,ES_AUTOHSCROLL
+    LTEXT           "Program",IDC_STATIC,7,30,34,8
+    EDITTEXT        IDC_PROGRAM,64,29,253,13,ES_AUTOHSCROLL
+    LTEXT           "Command Line",IDC_STATIC,8,53,51,8
+    EDITTEXT        IDC_COMLINE,64,51,253,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Save",IDC_SAVE,176,72,50,14
+    PUSHBUTTON      "Load",IDC_LOAD,246,71,50,14
+    DEFPUSHBUTTON   "OK",IDOK,36,72,50,14,WS_GROUP
+END
+
+IDD_MACPARAMS DIALOGEX 0, 0, 189, 171
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Macro Parameters"
+FONT 14, "Times New Roman", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_MP1V,144,18,38,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MP2V,144,31,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MP3V,144,44,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MP4V,144,57,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MP5V,144,70,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MP6V,144,83,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MP7V,144,96,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MP8V,144,109,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MP9V,144,122,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MP10V,144,135,38,12,ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_STATIC,63,8,19,8
+    EDITTEXT        IDC_MP1N,6,18,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "Continue",IDOK,7,150,50,14
+    PUSHBUTTON      "Cancel/End Macro",IDCANCEL,60,150,65,14
+    LTEXT           "Value",IDC_STATIC,153,8,18,8
+    EDITTEXT        IDC_MP2N,6,31,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_MP3N,6,44,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_MP4N,6,57,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_MP5N,6,70,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_MP6N,6,83,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_MP7N,6,96,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_MP8N,6,109,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_MP9N,6,122,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_MP10N,6,135,132,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+END
+
+IDD_MAXANGLE DIALOGEX 0, 0, 172, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Shift and Rotate"
+FONT 14, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_MAXANGLE,122,11,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,8,36,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,36,50,14
+    LTEXT           "Maximum Expected Angle 0 to 4500 (0 to 45 degrees)",
+                    IDC_STATIC,9,13,103,17
+END
+
+IDD_NOISE DIALOGEX 0, 0, 197, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Noise Reduction"
+FONT 14, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,140,17,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,41,50,14
+    EDITTEXT        IDC_DETECTION,113,7,22,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    LTEXT           "Detection Smoothing (1000 to 0)",IDC_STATIC,10,11,102,8
+    LTEXT           "Detection Threshold (0 to 255)",IDC_STATIC,9,33,99,8
+    EDITTEXT        IDC_DETECT_LIMIT,113,29,23,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    LTEXT           "Substitute Smoothing (1000 to 0)",IDC_STATIC,9,53,107,8
+    EDITTEXT        IDC_SUBSTITUTE,113,50,23,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+END
+
+IDD_SPECTRUM DIALOGEX 0, 0, 133, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Adjust Spectrum"
+FONT 14, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,76,13,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,76,30,50,14
+    LTEXT           "Red End",IDC_STATIC,8,7,28,8
+    LTEXT           "Blue End",IDC_STATIC,8,23,29,8
+    LTEXT           "Position of Break Point",IDC_STATIC,8,35,36,17
+    EDITTEXT        IDC_REDEND,50,7,21,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    EDITTEXT        IDC_BLUEEND,50,22,21,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    EDITTEXT        IDC_BREAK,50,37,21,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    LTEXT           "      0 Red, Pink",IDC_STATIC,33,53,49,8
+    LTEXT           "  255 Yellow, Cream",IDC_STATIC,33,69,62,8
+    LTEXT           "  510 Green, Pale Green",IDC_STATIC,33,85,77,8
+    LTEXT           "1020 Blue, Pale Blue",IDC_STATIC,33,117,66,8
+    LTEXT           "  765 Cyan",IDC_STATIC,33,101,33,8
+    LTEXT           "1530 Red (Use 0)",IDC_STATIC,33,149,54,8
+    LTEXT           "1275 Magenta",IDC_STATIC,33,133,44,8
+    LTEXT           "         Orange, Skin",IDC_STATIC,33,61,60,8
+    LTEXT           "         Indigo, Violet",IDC_STATIC,33,125,59,8
+    LTEXT           "         Purple, Lilac",IDC_STATIC,33,141,57,8
+    LTEXT           "         Yellow-Green",IDC_STATIC,33,77,59,8
+    LTEXT           "         Blue-Green",IDC_STATIC,33,93,53,8
+    LTEXT           "         Sky Blue",IDC_STATIC,33,109,44,8
+END
+
+IDD_EXTRACTRANGE DIALOGEX 0, 0, 132, 171
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extract Colour Range"
+FONT 14, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,15,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,32,50,14
+    LTEXT           "Red End",IDC_STATIC,7,7,30,8
+    LTEXT           "Blue End",IDC_STATIC,7,25,33,8
+    LTEXT           "Threshold",IDC_STATIC,7,42,36,8
+    EDITTEXT        IDC_REDEND1,45,7,24,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_BLUEEND1,45,24,24,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    EDITTEXT        IDC_BREAKPOINT1,45,41,24,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    LTEXT           "      0 Red, Pink",IDC_STATIC,33,60,49,8
+    LTEXT           "  255 Yellow, Cream",IDC_STATIC,33,76,62,8
+    LTEXT           "  510 Green, Pale Green",IDC_STATIC,33,92,77,8
+    LTEXT           "1020 Blue, Pale Blue",IDC_STATIC,33,124,66,8
+    LTEXT           "  765 Cyan",IDC_STATIC,33,108,33,8
+    LTEXT           "1530 Red (Use 0)",IDC_STATIC,33,156,54,8
+    LTEXT           "1275 Magenta",IDC_STATIC,33,140,44,8
+    LTEXT           "         Orange, Skin",IDC_STATIC,33,68,60,8
+    LTEXT           "         Indigo, Violet",IDC_STATIC,33,132,59,8
+    LTEXT           "         Purple, Lilac",IDC_STATIC,33,148,57,8
+    LTEXT           "         Yellow-Green",IDC_STATIC,33,84,59,8
+    LTEXT           "         Blue-Green",IDC_STATIC,33,100,53,8
+    LTEXT           "         Sky Blue",IDC_STATIC,33,116,44,8
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 137, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 14, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,105,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,105,50,14
+    EDITTEXT        IDC_RESERVE_RAM,98,16,26,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    LTEXT           "Reserve RAM (Megabytes) Takes effect at next New etc.",
+                    IDC_STATIC,9,14,87,16
+    CONTROL         "Display Help at Startup",IDC_STARTUP_HELP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,54,114,10
+    CONTROL         "Start in Simple Mode",IDC_STARTUP_SIMPLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,67,114,10
+    CONTROL         "Copy header info to saved files",IDC_HEADER,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,10,93,114,8
+    LTEXT           "CPU Usage, 0 to number of Cores, 0=maximum",IDC_STATIC,
+                    10,34,80,18
+    EDITTEXT        IDC_CORES,99,38,26,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_RIGHT
+    CONTROL         "Progress, default to Minimized",IDC_MINIPROGRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,80,114,10
+END
+
+IDD_CHOOSESOURCE DIALOGEX 0, 0, 186, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Source"
+FONT 12, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_SOURCELIST,5,17,174,139,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_RESOLUTION,5,37,174,139,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_RESOLUTION2,5,56,174,139,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RATE,70,84,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,23,105,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,105,50,14
+    EDITTEXT        IDC_MINRATE,6,84,40,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_MAXRATE,137,83,40,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "Preview Frame Rate",IDC_STATIC,56,73,65,8
+END
+
+IDD_CAMSETTINGS DIALOGEX 0, 0, 284, 221
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION
+CAPTION "Camera Settings"
+FONT 12, "Microsoft Sans Serif", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,200,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,200,50,14
+    LTEXT           "Brightness",IDC_STATIC,10,8,34,8
+    LTEXT           "Contrast",IDC_STATIC,10,27,29,8
+    LTEXT           "Hue",IDC_STATIC,10,47,14,8
+    LTEXT           "Saturation",IDC_STATIC,10,65,34,8
+    LTEXT           "Sharepness",IDC_STATIC,10,83,38,8
+    LTEXT           "Gamma",IDC_STATIC,10,101,53,8
+    LTEXT           "Colour Enable",IDC_STATIC,10,120,45,8
+    LTEXT           "White Balance",IDC_STATIC,10,136,53,8
+    LTEXT           "Backlight Compensation",IDC_STATIC,10,154,66,8
+    LTEXT           "Gain",IDC_STATIC,10,173,15,8
+    EDITTEXT        IDC_BRIGHTNESSMIN,89,8,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BRIGHTNESS,141,8,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BRIGHTNESSMAX,192,8,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Auto",IDC_BRIGHTNESSAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,11,31,10
+    EDITTEXT        IDC_CONTRASTMIN,89,26,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CONTRAST,141,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONTRASTMAX,191,26,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Auto",IDC_CONTRASTAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,27,31,10
+    EDITTEXT        IDC_HUEMIN,89,44,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_HUE,141,44,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HUEMAX,191,44,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Auto",IDC_HUEAUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    243,45,31,10
+    EDITTEXT        IDC_SATURATIONMIN,89,62,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SATURATION,141,62,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SATURATIONMAX,191,62,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Auto",IDC_SATURATIONAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,64,31,10
+    EDITTEXT        IDC_SHARPNESSMIN,89,80,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SHARPNESS,141,80,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARPNESSMAX,192,80,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Auto",IDC_SHARPNESSAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,83,31,10
+    EDITTEXT        IDC_GAMMAMIN,89,98,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GAMMA,141,98,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GAMMAMAX,192,98,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Auto",IDC_GAMMAAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,101,31,10
+    EDITTEXT        IDC_COLOURMIN,89,116,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_COLOUR,141,116,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOURMAX,192,116,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Auto",IDC_COLOURAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,119,31,10
+    EDITTEXT        IDC_WBALANCEMIN,89,134,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_WBALANCE,141,134,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WBALANCEMAX,192,134,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Auto",IDC_WBALANCEAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,137,31,10
+    EDITTEXT        IDC_BLCOMPMIN,89,152,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BLCOMP,141,152,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLCOMPMAX,193,152,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Auto",IDC_BLCOMPAUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,155,31,10
+    EDITTEXT        IDC_GAINMIN,89,170,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GAIN,141,170,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GAINMAX,194,170,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Auto",IDC_GAINAUTO,"Button",BS_AUTOCHECKBOX | BS_NOTIFY | 
+                    WS_TABSTOP,243,172,31,10
+    DEFPUSHBUTTON   "Update",IDOK2,113,200,50,14
+END
+
+IDD_GETMOVIE DIALOGEX 0, 0, 64, 64
+STYLE DS_ABSALIGN | DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+CAPTION "Movie Control"
+FONT 14, "Microsoft Sans Serif", 700, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Start",IDC_MSTART,7,7,50,14
+    PUSHBUTTON      "End",IDC_MEND,7,24,50,14
+    PUSHBUTTON      "Cancel",IDC_MCANCEL,7,41,50,14
+END
+
+IDD_SCALELINE DIALOGEX 0, 0, 234, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scale Line Properties"
+FONT 14, "Times New Roman", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,143,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,136,143,50,14
+    LTEXT           "Colours",IDC_STATIC,23,91,48,8
+    COMBOBOX        IDC_SLCOLOURS,63,89,61,58,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Orientation",IDC_STATIC,23,106,37,8
+    COMBOBOX        IDC_SLORIENT,63,104,61,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Data Source",IDC_STATIC,24,28,40,8
+    COMBOBOX        IDC_SLCALIBSRC,68,26,75,57,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Units",IDC_STATIC,24,43,17,8
+    COMBOBOX        IDC_SLCALIUNITS,68,41,48,59,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Real Length",IDC_STATIC,24,58,37,8
+    EDITTEXT        IDC_SLPIPS,177,103,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Divisions",IDC_STATIC,140,105,29,8
+    EDITTEXT        IDC_SLCALPIXLEN,189,56,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLCALILENGTH,68,56,24,12,ES_AUTOHSCROLL
+    LTEXT           "=Horiz. (X) Length in Pixels",IDC_STATIC,95,59,85,8
+    GROUPBOX        "Appearance",IDC_STATIC,13,77,205,57
+    LTEXT           "Units",IDC_STATIC,24,120,17,8
+    COMBOBOX        IDC_SLOUTUNITS,75,119,48,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Real Length",IDC_STATIC,139,120,37,8
+    EDITTEXT        IDC_SLOUTLEN,177,119,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Calibration",IDC_STATIC,13,14,205,60
+    LTEXT           "X pixels = Y pixels",IDC_STATIC,159,30,59,8
+    EDITTEXT        IDC_SLCALPIXH,190,41,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLCALPIXW,162,41,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Aspect Ratio",IDC_STATIC,121,43,40,8
+    COMBOBOX        IDC_SLPOSITION,157,89,59,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Position",IDC_STATIC,128,90,25,8
+END
+
+IDD_GRIDSETTINGS DIALOGEX 0, 0, 132, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grid Settings"
+FONT 16, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,55,50,14
+    LTEXT           "Number of Boxes",IDC_STATIC,7,8,56,8
+    EDITTEXT        IDC_GRIDX,71,19,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Horizontal",IDC_STATIC,20,21,33,8
+    EDITTEXT        IDC_GRIDY,71,35,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Vertical",IDC_STATIC,19,38,25,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        VERTGUIDE, 80
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_POINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_GROUPSIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_RESIZEALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_SIZROTMOV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_BRUSH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_ROTATERECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_GETVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_MACRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_IMPORTDM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_CHOOSEMACRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_PARAMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_GOTOFRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+
+    IDD_MOVIE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_TAKE_PICTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 22
+    END
+
+    IDD_CHOOSEEXTCOMMAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_EXTCOMMAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_MACPARAMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_MAXANGLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_NOISE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_SPECTRUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_EXTRACTRANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_CHOOSESOURCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_CAMSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_GETMOVIE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 57
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_SCALELINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_GRIDSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\combine.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_SIMPLE TOOLBAR  55, 32
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_GO
+    BUTTON      ID_VIEW_SELECTALL
+    BUTTON      ID_FILE_SAVERECTANGLE
+    BUTTON      ID_FRAME_UP
+    BUTTON      ID_VIEW_GOTOFRAME
+    SEPARATOR
+    BUTTON      ID_FRAME_DOWN
+    BUTTON      ID_VIEW_SIMPLEMODE
+    BUTTON      ID_HELP_COMBINEZPHELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_SIMPLE              BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\paint.cur"
+IDC_CURSOR2             CURSOR                  "res\\cursor2.cur"
+IDC_CURSOR3             CURSOR                  "res\\cursor3.cur"
+IDC_CURSOR4             CURSOR                  "res\\cursor4.cur"
+IDC_CURSOR5             CURSOR                  "res\\cursor5.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON33091          "Exit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_EXIT             "Exit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "New"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MACRO1               "\nRun Macro"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SELECTALL       "\nShrink/Expand Active Rectangle"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVERECTANGLE   "\nSave Rectangle"
+    ID_VIEW_TOGGLEDEPTHMAP  "\nView Previous Frame"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_VIEWPICTURE     "\nView Next Frame"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_GOTOFRAME       "\nChoose Frame to View"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SIMPLEMODE      "\nEnable Menu"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HELP_COMBINEZPHELP   "\nView Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FRAME_UP             "\nNext Frame"
+    ID_FRAME_DOWN           "\nPrevious Frame"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\combine.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

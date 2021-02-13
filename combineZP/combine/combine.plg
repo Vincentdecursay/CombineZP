@@ -1,0 +1,150 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: combine - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP13D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/combine.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\combine\combineDoc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP13D.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP13E.tmp" with contents
+[
+gdiplus.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/combine.pdb" /machine:I386 /out:"Release/combine.exe" 
+".\Release\Alignment.obj"
+".\Release\Average.obj"
+".\Release\Balance.obj"
+".\Release\ChooseMacro.obj"
+".\Release\Clear.obj"
+".\Release\combine.obj"
+".\Release\combineDoc.obj"
+".\Release\combineView.obj"
+".\Release\Copy.obj"
+".\Release\Deapth.obj"
+".\Release\DecimateDia.obj"
+".\Release\depthflow.obj"
+".\Release\detail.obj"
+".\Release\Dft.obj"
+".\Release\DftInterface.obj"
+".\Release\Display.obj"
+".\Release\Draw.obj"
+".\Release\Files.obj"
+".\Release\FixRectangles.obj"
+".\Release\FramePicture.obj"
+".\Release\Getvalue.obj"
+".\Release\GotoFrame.obj"
+".\Release\Hide.obj"
+".\Release\ImportDM.obj"
+".\Release\Info.obj"
+".\Release\InfoParameters.obj"
+".\Release\Islands.obj"
+".\Release\Keys.obj"
+".\Release\LightDark.obj"
+".\Release\macro.obj"
+".\Release\Macro1.obj"
+".\Release\MainFrm.obj"
+".\Release\memory.obj"
+".\Release\MenuUI.obj"
+".\Release\Monochrome.obj"
+".\Release\Mouse.obj"
+".\Release\PaintDia.obj"
+".\Release\patch.obj"
+".\Release\Pixels.obj"
+".\Release\Planes.obj"
+".\Release\Point1.obj"
+".\Release\Progress.obj"
+".\Release\RegisterDia.obj"
+".\Release\removesteps.obj"
+".\Release\RR.obj"
+".\Release\SeedFill.obj"
+".\Release\Size11.obj"
+".\Release\SizeDia.obj"
+".\Release\Skew.obj"
+".\Release\Special1.obj"
+".\Release\Special2.obj"
+".\Release\StdAfx.obj"
+".\Release\Transparent.obj"
+".\Release\Undo.obj"
+".\Release\Values.obj"
+".\Release\Zoom.obj"
+".\Release\combine.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP13E.tmp"
+<h3>Output Window</h3>
+Compiling...
+combineDoc.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP140.tmp" with contents
+[
+/nologo /o"Release/combine.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\Alignment.sbr"
+".\Release\Average.sbr"
+".\Release\Balance.sbr"
+".\Release\ChooseMacro.sbr"
+".\Release\Clear.sbr"
+".\Release\combine.sbr"
+".\Release\combineDoc.sbr"
+".\Release\combineView.sbr"
+".\Release\Copy.sbr"
+".\Release\Deapth.sbr"
+".\Release\DecimateDia.sbr"
+".\Release\depthflow.sbr"
+".\Release\detail.sbr"
+".\Release\Dft.sbr"
+".\Release\DftInterface.sbr"
+".\Release\Display.sbr"
+".\Release\Draw.sbr"
+".\Release\Files.sbr"
+".\Release\FixRectangles.sbr"
+".\Release\FramePicture.sbr"
+".\Release\Getvalue.sbr"
+".\Release\GotoFrame.sbr"
+".\Release\Hide.sbr"
+".\Release\ImportDM.sbr"
+".\Release\Info.sbr"
+".\Release\InfoParameters.sbr"
+".\Release\Islands.sbr"
+".\Release\Keys.sbr"
+".\Release\LightDark.sbr"
+".\Release\macro.sbr"
+".\Release\Macro1.sbr"
+".\Release\MainFrm.sbr"
+".\Release\memory.sbr"
+".\Release\MenuUI.sbr"
+".\Release\Monochrome.sbr"
+".\Release\Mouse.sbr"
+".\Release\PaintDia.sbr"
+".\Release\patch.sbr"
+".\Release\Pixels.sbr"
+".\Release\Planes.sbr"
+".\Release\Point1.sbr"
+".\Release\Progress.sbr"
+".\Release\RegisterDia.sbr"
+".\Release\removesteps.sbr"
+".\Release\RR.sbr"
+".\Release\SeedFill.sbr"
+".\Release\Size11.sbr"
+".\Release\SizeDia.sbr"
+".\Release\Skew.sbr"
+".\Release\Special1.sbr"
+".\Release\Special2.sbr"
+".\Release\Transparent.sbr"
+".\Release\Undo.sbr"
+".\Release\Values.sbr"
+".\Release\Zoom.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP140.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+combine.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
